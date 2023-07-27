@@ -1,5 +1,5 @@
 # Hangman game; using the words file from
-# https://www.randomlists.com/data/words.json
+# https://github.com/Tom25/Hangman/blob/master/wordlist.txt
 # created on July 26, 2023
 # This code is inspired from Kylie Ying's youtube channel
 
