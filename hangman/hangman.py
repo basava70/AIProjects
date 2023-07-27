@@ -3,15 +3,16 @@
 # created on July 26, 2023
 # This code is inspired from Kylie Ying's youtube channel
 
-from words import words  # list of all words for the computer to use
 import random
 import string
 
 
 # Since, we have - and spaces in the words
 # lets make sure the word is valid and only has alphabets
-def get_valid_word(words):
-    word = random.choice(words)
+def get_valid_word():
+    with open("words.txt", "r") as file:
+        words = file.readlines()
+    word = random.choice(words).replace("\n", "")
     while "-" in word or " " in word:
         word = random.choice(words)
     return word.upper()
@@ -19,7 +20,7 @@ def get_valid_word(words):
 
 # defining the actual game
 def hangman():
-    word = get_valid_word(words)
+    word = get_valid_word()
     alphabets = set(string.ascii_uppercase)  # list of all alphabets
     # print("choosen word = ", word)
     guessed_letters = set()  # all the letters we guessed at any given time
