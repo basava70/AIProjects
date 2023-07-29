@@ -1,5 +1,7 @@
 # AIProjects
-Passtime projects using python.
+
+Passtime projects using python.  
 Projects list :
-      TicTacToe with unbeatable AI
-      Hangman game
+
+- TicTacToe with unbeatable AI
+- Hangman game
