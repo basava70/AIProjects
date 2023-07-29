@@ -190,7 +190,7 @@ def play():
     board = initial_state()
     print_board(board)
     while True:
-        human = input("Choose X or O ")
+        human = input("Choose X or O ").upper()
         if human not in ["X", "O"]:
             print("Not a valid input, try again")
         else:
