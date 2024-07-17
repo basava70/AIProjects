@@ -1,8 +1,8 @@
 # Tictactoe using minimax from cs50 ai lecture 0 search
 # Written on July 28
 
-import random
 import copy
+import random
 
 
 # initial state
@@ -32,7 +32,7 @@ def result(board, action) -> list[int]:
 
 
 # returns the winner of the game if there is one
-def winner(board) -> str | bool:
+def winner(board):
     # check initial state
     if board.count(" ") == 9:
         return False
@@ -104,7 +104,7 @@ def random_choice_ai(board) -> int:
 
 
 # using minimax algorithm to determine ai's next move
-def ai_choice(board) -> int | None:
+def ai_choice(board):
     # return any corner for the first move, as its statistically the best choice
     if board.count(" ") == 9:
         return 0
